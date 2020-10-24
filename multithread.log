@@ -35,10 +35,8 @@ ld: warning: cannot export hidden symbol tbb::empty_task::execute() from arena.o
 ld: warning: cannot export hidden symbol tbb::empty_task::~empty_task() from scheduler.o
 ld: warning: cannot export hidden symbol tbb::empty_task::~empty_task() from scheduler.o
 ld: warning: cannot export hidden symbol tbb::empty_task::execute() from scheduler.o
-Compiling Stan program...
-11.152 sec elapsed
-Moved .hpp file and set internal path to new location:
-- /Volumes/D/r/tests/reduce_sum_stan/stan/logit_single.hpp
+Model executable is up to date!
+0.024 sec elapsed
 data {
   
   int<lower=0> N;
@@ -88,14 +86,14 @@ Chain 1 Iteration: 4500 / 6000 [ 75%]  (Sampling)
 Chain 2 Iteration: 5500 / 6000 [ 91%]  (Sampling) 
 Chain 1 Iteration: 5000 / 6000 [ 83%]  (Sampling) 
 Chain 2 Iteration: 6000 / 6000 [100%]  (Sampling) 
-Chain 2 finished in 11.9 seconds.
+Chain 2 finished in 10.6 seconds.
 Chain 1 Iteration: 5500 / 6000 [ 91%]  (Sampling) 
 Chain 1 Iteration: 6000 / 6000 [100%]  (Sampling) 
-Chain 1 finished in 13.8 seconds.
+Chain 1 finished in 12.6 seconds.
 
 Both chains finished successfully.
-Mean chain execution time: 12.9 seconds.
-Total execution time: 13.9 seconds.
+Mean chain execution time: 11.6 seconds.
+Total execution time: 12.7 seconds.
 # A tibble: 3 x 10
   variable     mean   median     sd    mad       q5      q95  rhat ess_bulk
   <chr>       <dbl>    <dbl>  <dbl>  <dbl>    <dbl>    <dbl> <dbl>    <dbl>
@@ -103,10 +101,8 @@ Total execution time: 13.9 seconds.
 2 beta[1]  -5.22e-1 -5.22e-1 0.0213 0.0213 -5.58e-1 -4.88e-1  1.00    8110.
 3 beta[2]   2.27e-1  2.27e-1 0.0210 0.0211  1.93e-1  2.62e-1  1.00    8618.
 # … with 1 more variable: ess_tail <dbl>
-Compiling Stan program...
-51.74 sec elapsed
-Moved .hpp file and set internal path to new location:
-- /Volumes/D/r/tests/reduce_sum_stan/stan/logit_multi.hpp
+Model executable is up to date!
+0.001 sec elapsed
 functions {
   
   real partial_sum(
@@ -155,12 +151,12 @@ Chain 1 Iteration: 1000 / 6000 [ 16%]  (Warmup)
 Chain 1 Iteration: 1001 / 6000 [ 16%]  (Sampling) 
 Chain 2 Iteration: 1000 / 6000 [ 16%]  (Warmup) 
 Chain 2 Iteration: 1001 / 6000 [ 16%]  (Sampling) 
-Chain 1 Iteration: 1500 / 6000 [ 25%]  (Sampling) 
 Chain 2 Iteration: 1500 / 6000 [ 25%]  (Sampling) 
+Chain 1 Iteration: 1500 / 6000 [ 25%]  (Sampling) 
 Chain 2 Iteration: 2000 / 6000 [ 33%]  (Sampling) 
 Chain 1 Iteration: 2000 / 6000 [ 33%]  (Sampling) 
-Chain 1 Iteration: 2500 / 6000 [ 41%]  (Sampling) 
 Chain 2 Iteration: 2500 / 6000 [ 41%]  (Sampling) 
+Chain 1 Iteration: 2500 / 6000 [ 41%]  (Sampling) 
 Chain 2 Iteration: 3000 / 6000 [ 50%]  (Sampling) 
 Chain 1 Iteration: 3000 / 6000 [ 50%]  (Sampling) 
 Chain 2 Iteration: 3500 / 6000 [ 58%]  (Sampling) 
@@ -174,13 +170,13 @@ Chain 1 Iteration: 5000 / 6000 [ 83%]  (Sampling)
 Chain 2 Iteration: 5500 / 6000 [ 91%]  (Sampling) 
 Chain 1 Iteration: 5500 / 6000 [ 91%]  (Sampling) 
 Chain 2 Iteration: 6000 / 6000 [100%]  (Sampling) 
-Chain 2 finished in 8.2 seconds.
+Chain 2 finished in 8.4 seconds.
 Chain 1 Iteration: 6000 / 6000 [100%]  (Sampling) 
-Chain 1 finished in 8.6 seconds.
+Chain 1 finished in 9.0 seconds.
 
 Both chains finished successfully.
-Mean chain execution time: 8.4 seconds.
-Total execution time: 8.6 seconds.
+Mean chain execution time: 8.7 seconds.
+Total execution time: 9.0 seconds.
 # A tibble: 3 x 10
   variable     mean   median     sd    mad       q5      q95  rhat ess_bulk
   <chr>       <dbl>    <dbl>  <dbl>  <dbl>    <dbl>    <dbl> <dbl>    <dbl>

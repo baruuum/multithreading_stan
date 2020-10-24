@@ -60,7 +60,6 @@ mod_single = cmdstan_model(
     here("stan", "logit_single.stan")
 )
 toc()
-mod_single$save_hpp_file(dir = here("stan"))
 
 
 # check code
@@ -90,7 +89,7 @@ mod_multi = cmdstan_model(
     cpp_options = list(stan_threads = TRUE) # notice this here!
 )
 toc()
-mod_multi$save_hpp_file(dir = here("stan"))
+
 
 # check
 mod_multi$print()
