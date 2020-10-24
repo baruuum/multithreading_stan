@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 .DS_Store
+
+/stan/logit_single
+/stan/logit_single.hpp
+/stan/logit_multi_threads
+/stan/logit_multi.hpp

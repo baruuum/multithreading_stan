@@ -33,7 +33,8 @@ library(cmdstanr)
 # rebuild cmdstan
 rebuild_cmdstan(
     dir = cmdstan_path(),
-    cores = 6L
+    cores = 6L,
+    quiet = TRUE
 )
 
 # create data
